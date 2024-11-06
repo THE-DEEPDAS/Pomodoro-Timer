@@ -280,9 +280,11 @@ def main():
         handle_gestures(landmarks, len(landmarks))
         
         # Display remaining time on frame
-        mins, secs = divmod(time_left, 60)
-        cv2.putText(frame, f"{MODES[current_mode]}: {mins:02d}:{secs:02d}", (10, 30), 
-                    cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
+        mins, secs = divmod(time_left // 1000, 60)  # Convert milliseconds to seconds and get minutes and seconds
+        ms = time_left % 1000  # Get the remaining milliseconds
+
+        cv2.putText(frame, f"{MODES[current_mode]}: {mins:02d}:{secs:02d}:{ms:03d}", 
+                    (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
         
         # Show the frame with detected hand and timer if window is open
         if window_open:
