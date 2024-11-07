@@ -30,7 +30,7 @@ Check out a **Demo Video** highlighting the Gesture-Based Pomodoro Timer's main 
 Alternatively, you can download and view the video offline using the link above.
 
 <video width="600" controls autoplay loop>
-  <source src="https://drive.google.com/file/d/1sWiR8qSKhti5zCXLqUtJMzrJANscraKG/view?usp=sharing" type="video/mp4">
+  <source src="./demo_final.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
@@ -40,7 +40,7 @@ Alternatively, you can download and view the video offline using the link above.
 
 Here is the gestures guide for the Pomodoro Timer:
 
-![Gestures Guide](Pomodoro%20Timer/Gestures%20Guide.png)
+![Gestures Guide](Gestures%20Guide.png)
 
 ---
 
