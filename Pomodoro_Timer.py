@@ -65,7 +65,7 @@ def update_timer():
             current_mode = (current_mode + 1) % len(MODES)  # Switch to next mode
             time_left = mode_durations[MODES[current_mode]]
             print(f"Mode switched to {MODES[current_mode]}")
-            pygame.mixer.Sound.play(pygame.mixer.Sound('./alarm.wav'))  # Sound for timer end
+            pygame.mixer.Sound.play(pygame.mixer.Sound('./bg_sound.wav'))  # Sound for timer end(you can definitely change that)
 
 # Functions to control the OpenCV window based on focus mode
 def close_timer_window():
